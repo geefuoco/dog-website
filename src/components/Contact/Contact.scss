@@ -1,0 +1,25 @@
+.contact-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 5.5rem;
+    height: 100vh;
+    background-image: url("../../assets/bulldog_5.jpg");
+    background-size: cover;
+}
+
+.contact-wrapper{
+    padding: 2rem;
+    background-color: #1d1d1ddd;
+    border-radius: .8rem;
+    color: white;
+    text-align: center;
+    flex-basis: 40%;
+    h1{
+        font-size: 2rem;
+    }
+
+    p{
+        font-size: 1.7rem;
+    }
+}
