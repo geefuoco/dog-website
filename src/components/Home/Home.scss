@@ -1,4 +1,56 @@
+$main: #557855;
+
 .home-container{
-    padding: 1rem;
+    display: flex;
+    margin-top: 5.5rem;
+    background-image: url("../../assets/bulldog_3.jpg");
+    background-repeat: no-repeat;
+    background-size: 280%;
+    background-position: center;
+    height: 100vh;
+    color: white;
+
+    @media screen and (min-width: 325px){
+        background-size: 340%;
+    }
     
+    @media screen and (min-width: 440px){
+        background-size: cover;
+    }
+}
+
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    flex: 1 1 30%;
+    align-self: center;
+    background-color: #1d1d1d66;
+    text-align: center;
+    gap: 1rem;
+
+    @media screen and (min-width: 1024px){
+        flex-grow: 0;
+        height: 100vh;
+        justify-content: center;
+        font-size: 2rem;
+    }
+}
+
+.view-puppies{
+    padding: 1.5rem;
+    color: white;
+    background-color: $main;
+    border-radius: .4rem;
+    font-weight: 600;
+    font-size: 1.8rem;
+    max-width: 15rem;
+    align-self: center;
+    &:hover{
+        color: #faf;
+        cursor: pointer;
+    }
+    &:active{
+        background-color: #aabbaadd;
+    }
 }
