@@ -1,0 +1,36 @@
+.card{
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0 0.4rem 0.4rem lightgrey;
+    border-radius: .8rem;
+    
+    @media screen and (min-width: 768px){
+        width: 900px;
+        flex-direction: row;
+    }
+    
+}
+
+.card-image{
+    flex: 1 1 60%;
+    img{
+        border: solid 20px white;
+        width: 100%;
+        max-width: 450px;
+    }
+}
+
+.card-body{
+    flex: 1 1 40%;
+    max-width: 450px;
+
+    & > *{
+        padding: .4rem 1.2rem;
+    }
+
+    h2{
+        font-size: 4vmax;
+    }
+
+}
