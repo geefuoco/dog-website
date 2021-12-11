@@ -10,4 +10,8 @@ describe("Available Puppies", () => {
   it("should render a div with class available-container", () => {
     expect(wrapper.find(".available-container").length).toEqual(1);
   });
+
+  it("should have many card components", () => {
+    expect(wrapper.find(".card").length).toBeGreaterThan(5);
+  });
 });
