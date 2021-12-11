@@ -1,0 +1,97 @@
+$main: #557855;
+
+
+nav{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    img{
+        filter: invert(100);
+    }
+    z-index: 99;
+}
+
+.navbar{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    padding: .4rem;
+    background-color: $main;
+}
+
+.links{
+    position: absolute;
+    left: 0;
+    top: -400%;
+    width: 100%;
+    padding: 1.2rem;
+    font-size: 3.5vmax;
+    background-color: $main;
+    z-index: -1;
+    @media screen and (min-width: 768px){
+        padding: .4rem;
+        font-size: 2vmax;
+        position: static;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex: 1 1 30%;
+        z-index: 0;
+    }
+
+    a{
+        display: block;
+        padding: .8rem 0;
+    }
+    transition: top 500ms ease-in-out 0s;
+
+}
+
+.logo{
+    display: flex;
+    color: white;
+    flex-grow: 1;
+    padding: .5rem;
+    
+    &:hover{
+        cursor: pointer;
+    }
+    
+    h1{
+        align-self: center;
+        font-size: 1.8rem;
+    }
+    
+    
+}
+
+.collapse{
+    top: -400%;
+}
+
+.expand{
+    top: 80%;
+
+
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+}
+
+.nav-toggle{
+    align-self: center;
+    padding: .5rem;
+
+    @media screen and (min-width: 768px){
+        display: none;
+    }
+
+    img:hover{
+        cursor: pointer;
+    }
+
+    &:active{
+        background-color: #1d1d1d22;
+    }
+}

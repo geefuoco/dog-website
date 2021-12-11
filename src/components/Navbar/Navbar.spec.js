@@ -18,6 +18,12 @@ describe("Navbar", () => {
       return arr;
     }, []);
 
-    expect(links).toEqual(["/", "/about-us", "/available-puppies", "/contact"]);
+    expect(links).toEqual([
+      "/",
+      "/",
+      "/about-us",
+      "/available-puppies",
+      "/contact",
+    ]);
   });
 });
